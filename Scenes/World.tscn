@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/TileSet.tres" type="TileSet" id=1]
+[ext_resource path="res://Scenes/RaycastPlayer.tscn" type="PackedScene" id=2]
+
+[node name="World" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="." index="0"]
+
+mode = 0
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 35, 35 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( -393216, 0, 0, -393200, 0, 0, -327680, 0, 0, -327664, 0, 0, -262144, 0, 0, -262128, 0, 0, -196608, 0, 0, -196592, 0, 0, -131072, 0, 0, -131056, 0, 0, 0, 0, 0, 16, 0, 0, 65536, 0, 0, 65552, 0, 0, 131072, 0, 0, 131088, 0, 0, 196608, 0, 0, 196624, 0, 0, 262144, 0, 0, 262160, 0, 0, 327680, 0, 0, 327696, 0, 0, 393216, 0, 0, 393232, 0, 0, 458752, 0, 0, 458768, 0, 0, 524288, 0, 0, 524290, 1, 0, 524292, 1, 0, 524294, 1, 0, 524296, 1, 0, 524298, 1, 0, 524300, 1, 0, 524302, 1, 0, 524304, 0, 0 )
+_sections_unfolded = [ "Cell" ]
+
+[node name="RaycastPlayer" parent="." index="1" instance=ExtResource( 2 )]
+
+position = Vector2( 155.515, -29.9872 )
+
+
